@@ -13,7 +13,7 @@ app.use(allowOnlyGet);
 
 /* ROUTES */
 app.get("/", (req, res) => {
-  res.send("Welcome");
+  res.send("Welcome!");
 });
 
 app.use("/", carRoutes);
