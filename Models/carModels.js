@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
 
 // create database
 mongoose.connect(process.env.DB_URL).then(() => {
@@ -7,7 +6,7 @@ mongoose.connect(process.env.DB_URL).then(() => {
 });
 
 // create document format
-const ProductSchema = new Schema({
+const ProductSchema = new mongoose.Schema({
   model_name: String,
   colour: String,
   showroom_cost: Number,
